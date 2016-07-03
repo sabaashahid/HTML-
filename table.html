@@ -1,0 +1,149 @@
+<style type="text/css">
+  .table1 { border-width:4px; width:400px; 
+            margin: auto; border-style:solid; border-collapse:separate;}
+  th, td{ border-width:2px; border-style:solid; }
+  .table2 { border-width:4px; width:400px; 
+            margin: auto; border-style:solid; border-spacing:20px; border-collapse:separate;}
+  .ex2 { border-width:2px; border-style:solid; background-color:#FF6699;}
+  .caption2 {border-width:2px; border-style:solid;}
+
+  .table3 { border-width:4px; width:600px; 
+           margin: auto; border-style:solid; border-collapse:separate;caption-side:bottom;}
+
+  .vab { vertical-align:bottom; height:60px;} 
+  .vat { vertical-align:top; height:60px;} 
+  .vam { vertical-align:center; height:60px;} 
+  .hoc { text-align:center; height:60px;} 
+  .hor { text-align:right;height:60px;} 
+  .hol { text-align:left; height:60px;} 
+
+.table4 { border-width:4px; width:600px; 
+           margin: auto; border-style:solid; border-collapse:separate;}
+.ex3 { border-width:2px; border-style:solid; height:60px;}
+
+.nestedTable{width:100%; margin:auto; border-width: 2px; border-collapse: separate;}
+
+</style>
+
+<table class="table1">
+  <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+  </tr>
+  <tr>
+     <td> Cell 1, Heading 1 </td>   
+     <td> Cell 1, Heading 2 </td>   
+     <td> Cell 1, Heading 3 </td>   
+  </tr>
+  <tr>
+     <td> Cell 2, Heading 1 </td>   
+     <td> Cell 2, Heading 2 </td>   
+     <td> Cell 2, Heading 3 </td>     
+  </tr>
+  <tr>
+     <td> Cell 3, Heading 1 </td>   
+     <td> Cell 3, Heading 2 </td>   
+     <td> Cell 3, Heading 3 </td>   
+  </tr>
+  </table>
+
+ <p> The CSS features used in this example include altering the width of the table and its border (to 400px and 4px respectively) in addition to centering it to the middle of the webpage. </p>  
+
+  <table class="table2">
+  <caption> <span class ="caption2">This table shows example 2</span></caption>
+  <tr>
+      <th class="ex2">Heading 1</th>
+      <th class="ex2">Heading 2</th>
+      <th class="ex2">Heading 3</th>
+  </tr>
+  <tr>
+     <td> Cell 1, Heading 1 </td>   
+     <td> Cell 1, Heading 2 </td>   
+     <td> Cell 1, Heading 3 </td>   
+  </tr>
+  <tr>
+     <td> Cell 2, Heading 1 </td>   
+     <td> Cell 2, Heading 2 </td>   
+     <td> Cell 2, Heading 3 </td>     
+  </tr>
+  <tr>
+     <td> Cell 3, Heading 1 </td>   
+     <td> Cell 3, Heading 2 </td>   
+     <td> Cell 3, Heading 3 </td>   
+  </tr>
+  </table>
+
+<p> The CSS features used in this example include changing the spacing between all cells (to 20px), adding a bordered caption to the table and adding a pink background to the table headers. </p>  
+
+<table class="table3">
+  <span= border-width=2px solid><caption> This is the caption for Table 3 </caption></span>
+  <tr>
+    <th colspan="3">Alignment Example</th>
+  </tr>
+  <tr>
+    <td class="vat">Row 2 - Cell 1</td>
+    <td class="vam">Row 2 - Cell 2</td>
+    <td class="vab">Row 2 - Cell 3</td>
+  </tr>
+  <tr>
+    <td class="hol">Row 3 - Cell 1</td>
+    <td class="hoc">Row 3 - Cell 2</td>
+    <td class="hor">Row 3 - Cell 3</td>
+  </tr>
+  <tr>
+    <td class="hol vat">Row 4 - Cell 1</td>
+    <td class="hoc vat">Row 4 - Cell 2</td>
+    <td class="hor vat">Row 4 - Cell 3</td>
+  </tr>
+   <tr>
+    <td class="hol vam">Row 5 - Cell 1</td>
+    <td class="hoc vam">Row 5 - Cell 2</td>
+    <td class="hor vam">Row 5 - Cell 3</td>
+  </tr>
+   <tr>
+    <td class="hol vab">Row 6 - Cell 1</td>
+    <td class="hoc vab">Row 6 - Cell 2</td>
+    <td class="hor vab">Row 6 - Cell 3</td>
+  </tr>
+  </table>
+
+ <p> The CSS features used in this example include altering the width of the table and its border (to 600px and 4px respectively) in addition to centering it to the middle of the webpage. The caption is placed at the bottom using "span". The height and border of the cells have been changed to 60px and 2px respectively. Lastly, the alignment of the text in each cell display a pattern in each row- row 2 features a diagonal pattern, and rows 3-6 display the text from the left/center/right in a pattern of middle/top/middle/bottom.</p>  
+
+<table class=table4">
+<tr>
+    <th rowspan="2">INT222</th>
+    <th> Marks </th>
+</tr>
+<tr>
+  <td>
+    <table class="nestedTable"> 
+    <tr>
+    <td> Test #1 </td>
+    <td> Test #2 </td>
+    </tr>
+    <tr>
+    <td> 95% </td>
+    <td> 95% </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+
+ <p> The CSS features used in this example include altering the width of the table and its border (to 600px and 4px respectively) in addition to centering it to the middle of the webpage. The height and border of the cells have been changed to 60px and 2px respectively. Cell 1 in Row 1 spans over 2 rows and there is a nested table included in Row 2. </p>
+
+ 
+                <p class="indent"> HTML tables should be used to display data relating to objects that have the same properties.
+                In other words, HTML tables serve a functional purpose (organizing data) rather than for layouts. </p>
+    
+                <p class="indent"> Basic Table Tags in HTML </p>
+                        <ul>
+                        <li> &lt;table&gt;        - Specifies a table </li>
+                        <li> &lt;caption&gt;      - Specifies a table caption </li>
+                        <li> &lt;tr&gt;   - Specifies a table row </li>
+                        <li> &lt;th&gt; - Specifies a table header </li>
+                        <li> &lt;td&gt; - Specifies a table cell / detail </li>
+                         </ul>
+
